@@ -1,4 +1,6 @@
-package org.example.list;
+package org.example.list.zadanie2;
+
+import org.example.list.zadanie2.Contact;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +9,16 @@ import static javax.swing.UIManager.get;
 
 public class Phone {
     static List<String> contact= new ArrayList<>();
-//    для добавление нового контакта,
+
+
+    //    для добавления нового контакта
 public static void myAdd(String avatar, String firstname, String lastname, String phoneNumber){
-    contact.add( avatar);
+    Contact contact=new Contact();
+    contact.setAvatar(avatar);
+    contact.setFirstname(firstname);
+    contact.setLastname(lastname);
+    contact.setPhoneNumber(phoneNumber);
+
 }
 //    удаления контакта,
     public static void remove(int index){

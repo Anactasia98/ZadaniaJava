@@ -1,4 +1,4 @@
-package org.example.list;
+package org.example.list.zadanie2;
 
 public class Contact extends Phone {
     String avatar;
@@ -12,6 +12,11 @@ public class Contact extends Phone {
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
     }
+
+    public Contact() {
+
+    }
+
 
     public String getAvatar() {
         return avatar;
